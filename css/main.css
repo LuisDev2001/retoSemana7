@@ -53,4 +53,19 @@ img {
   display: block;
 }
 
+h2 {
+  font-family: "Helvetica";
+}
+
+h1,
+p,
+span {
+  font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Helvetica";
+}
+
 /*# sourceMappingURL=main.css.map */
