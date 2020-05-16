@@ -1,3 +1,25 @@
-
+@font-face {
+  src: url("../../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
+  --font-helvetica: "Helvetica"
+  --font-gilroy: "Gilroy-Bold" ;
+}
 
 /*# sourceMappingURL=settings.css.map */
