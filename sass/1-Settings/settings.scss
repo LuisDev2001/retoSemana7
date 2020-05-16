@@ -1,15 +1,4 @@
-//Importando fuente
-@font-face {
-  src: url("../../fonts/Helvetica.ttf");
-  font-family: "Helvetica";
-}
-
-@font-face {
-  src: url("../../fonts/Gilroy-Bold.ttf");
-  font-family: "Gilroy-Bold";
-}
-
-//Variables
+/*Variables*/
 :root {
   --colorBlancogris: #f4f4f4;
   --colorBlanco: #ffffff;
@@ -24,4 +13,14 @@
   --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
   --font-helvetica: "Helvetica"
   --font-gilroy: "Gilroy-Bold"
+}
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
 }

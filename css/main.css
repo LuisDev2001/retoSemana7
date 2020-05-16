@@ -1,11 +1,4 @@
-@font-face {
-  src: url("../../fonts/Helvetica.ttf");
-  font-family: "Helvetica";
-}
-@font-face {
-  src: url("../../fonts/Gilroy-Bold.ttf");
-  font-family: "Gilroy-Bold";
-}
+/*Variables*/
 :root {
   --colorBlancogris: #f4f4f4;
   --colorBlanco: #ffffff;
@@ -20,6 +13,44 @@
   --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
   --font-helvetica: "Helvetica"
   --font-gilroy: "Gilroy-Bold" ;
+}
+
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+/*RESETEANDO ESTILOS*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
