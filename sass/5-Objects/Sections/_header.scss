@@ -56,11 +56,4 @@
       padding: 0 1.5rem;
     }
   }
-
-  @include desktop {
-    & .contenedor {
-      max-width: 58rem;
-      padding: 0;
-    }
-  }
 }

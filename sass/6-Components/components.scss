@@ -4,6 +4,11 @@
 .contenedor {
   height: auto;
   margin: 0 auto;
+  padding: 0 0.9rem;
+  @include desktop {
+    max-width: 58rem;
+    padding: 0;
+  }
 }
 //Logo componenet
 .logo {
@@ -33,5 +38,94 @@
     font-family: $fontGilroyBold;
     position: absolute;
     left: 15px;
+  }
+}
+// Input reutilizable
+.search {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &-form {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-icon {
+    width: 40px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--colorBlancogris);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    & .fas.fa-search {
+      color: var(--colorAzul2);
+      font-size: 1rem;
+    }
+  }
+
+  &-input {
+    width: calc(100% - 40px);
+    height: 56px;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    background: var(--colorBlancogris);
+    color: var(--colorAzul2);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    &-input::placeholder {
+      color: var(--colorAzul2);
+      font-size: 1rem;
+    }
+  }
+}
+/*Mas informacion, iconos, author, hours*/
+.article-more-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 26px;
+  margin-top: 0.5rem;
+
+  .author {
+    display: flex;
+    flex-direction: column;
+
+    &-name {
+      color: var(--colorAzul1);
+      font-size: 14px;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+    &-hour-post {
+      color: var(--colorAzul1);
+      opacity: 0.4;
+      font-size: 14px;
+    }
+  }
+  .article-icons {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & .fas.fa-share-alt,
+    & .fas.fa-bookmark {
+      color: var(--colorAzul3);
+      font-size: 14px;
+      cursor: pointer;
+    }
   }
 }
