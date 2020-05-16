@@ -1,0 +1,27 @@
+/*Paginador de articulos*/
+.all-article-pages {
+  width: 100%;
+  height: 100px;
+  display: none;
+
+  .btn-page {
+    border: 0;
+    background: none;
+    color: var(--colorAzul3);
+    cursor: pointer;
+    font-size: 1rem;
+
+    & .fas.fa-arrow-left {
+      margin-right: 0.9rem;
+    }
+
+    & .fas.fa-arrow-right {
+      margin-left: 0.9rem;
+    }
+  }
+  @include tabletV {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

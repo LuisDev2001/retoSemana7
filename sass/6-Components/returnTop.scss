@@ -1,0 +1,30 @@
+@import "../1-Settings/settings.scss";
+@import "../2-Tools/tools.scss";
+/*returnTop*/
+.returnTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  border-radius: 50%;
+  background: var(--colorCelesteOscuro);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background: var(--colorCelesteClaro);
+
+    i {
+      color: var(--colorCelesteOscuro);
+    }
+  }
+
+  i {
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+  }
+}

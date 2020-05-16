@@ -1,0 +1,23 @@
+@import "../1-Settings/settings.scss";
+@import "../2-Tools/tools.scss";
+/*new post mobile button*/
+.new-post-mobile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  justify-content: flex-end;
+  text-align: right;
+  padding: 0.5rem 2rem 0 0;
+
+  &-link {
+    color: var(--colorAzul3);
+    font-size: 1rem;
+    font-family: Arial;
+    font-weight: bold;
+  }
+
+  @include tabletV {
+    display: none;
+  }
+}

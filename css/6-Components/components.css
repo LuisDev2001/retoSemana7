@@ -18,16 +18,24 @@
   --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
 }
 
-.contenedor {
-  height: auto;
-  margin: 0 auto;
-  padding: 0 0.9rem;
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
 }
-@media (min-width: 1200px) {
-  .contenedor {
-    max-width: 58rem;
-    padding: 0;
-  }
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
 }
 
 .logo {
@@ -55,6 +63,26 @@
   font-family: "Gilroy-Bold";
   position: absolute;
   left: 15px;
+}
+
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
 }
 
 .search {
@@ -108,6 +136,26 @@
   font-size: 1rem;
 }
 
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
+}
+
 /*Mas informacion, iconos, author, hours*/
 .article-more-info {
   width: 100%;
@@ -144,53 +192,24 @@
   cursor: pointer;
 }
 
-/*Paginador de articulos*/
-.all-article-pages {
-  width: 100%;
-  height: 100px;
-  display: none;
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
 }
-.all-article-pages .btn-page {
-  border: 0;
-  background: none;
-  color: var(--colorAzul3);
-  cursor: pointer;
-  font-size: 1rem;
-}
-.all-article-pages .btn-page .fas.fa-arrow-left {
-  margin-right: 0.9rem;
-}
-.all-article-pages .btn-page .fas.fa-arrow-right {
-  margin-left: 0.9rem;
-}
-@media (min-width: 768px) {
-  .all-article-pages {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-/*new post mobile button*/
-.new-post-mobile {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  justify-content: flex-end;
-  text-align: right;
-  padding: 0.5rem 2rem 0 0;
-}
-.new-post-mobile-link {
-  color: var(--colorAzul3);
-  font-size: 1rem;
-  font-family: Arial;
-  font-weight: bold;
-}
-@media (min-width: 768px) {
-  .new-post-mobile {
-    display: none;
-  }
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
 }
 
 /*Colocar estilos de boton a reutilizar*/
@@ -230,6 +249,134 @@
   }
 }
 
+/*Paginador de articulos*/
+.all-article-pages {
+  width: 100%;
+  height: 100px;
+  display: none;
+}
+.all-article-pages .btn-page {
+  border: 0;
+  background: none;
+  color: var(--colorAzul3);
+  cursor: pointer;
+  font-size: 1rem;
+}
+.all-article-pages .btn-page .fas.fa-arrow-left {
+  margin-right: 0.9rem;
+}
+.all-article-pages .btn-page .fas.fa-arrow-right {
+  margin-left: 0.9rem;
+}
+@media (min-width: 768px) {
+  .all-article-pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
+}
+
+/*new post mobile button*/
+.new-post-mobile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  justify-content: flex-end;
+  text-align: right;
+  padding: 0.5rem 2rem 0 0;
+}
+.new-post-mobile-link {
+  color: var(--colorAzul3);
+  font-size: 1rem;
+  font-family: Arial;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .new-post-mobile {
+    display: none;
+  }
+}
+
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
+}
+
+/*returnTop*/
+.returnTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  border-radius: 50%;
+  background: var(--colorCelesteOscuro);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.returnTop:hover {
+  background: var(--colorCelesteClaro);
+}
+.returnTop:hover i {
+  color: var(--colorCelesteOscuro);
+}
+.returnTop i {
+  color: var(--colorBlanco);
+  font-size: 1.5rem;
+}
+
+.contenedor {
+  height: auto;
+  margin: 0 auto;
+  padding: 0 0.9rem;
+}
+@media (min-width: 1200px) {
+  .contenedor {
+    max-width: 58rem;
+    padding: 0;
+  }
+}
+
 /*contact more repeat*/
 .contact {
   margin-bottom: 1.5rem;
@@ -252,33 +399,6 @@
 .footer-blog-copy-text {
   color: var(--colorBlanco);
   opacity: 0.4;
-}
-
-/*returnTop*/
-.returnTop {
-  position: fixed;
-  bottom: 0;
-  right: 2rem;
-  border-radius: 50%;
-  background: var(--colorCelesteOscuro);
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.returnTop:hover {
-  background: var(--colorCelesteClaro);
-}
-.returnTop:hover i {
-  color: var(--colorCelesteOscuro);
-}
-.returnTop i {
-  color: var(--colorBlanco);
-  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=components.css.map */

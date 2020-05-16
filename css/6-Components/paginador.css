@@ -1,0 +1,20 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 22 | /   @include tabletV {
+ * 23 | |     display: flex;
+ * 24 | |     align-items: center;
+ * 25 | |     justify-content: space-between;
+ * 26 | \   }
+ *    '
+ *   sass\6-components\paginador.scss 22:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 22 \2502  \250c    @include tabletV {\a 23 \2502  \2502      display: flex;\a 24 \2502  \2502      align-items: center;\a 25 \2502  \2502      justify-content: space-between;\a 26 \2502  \2514    }\a    \2575 \a   sass\\6-components\\paginador.scss 22:3  root stylesheet";
+}

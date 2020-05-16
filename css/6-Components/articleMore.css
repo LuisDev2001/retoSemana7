@@ -1,0 +1,57 @@
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
+}
+
+/*Mas informacion, iconos, author, hours*/
+.article-more-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 26px;
+  margin-top: 0.5rem;
+}
+.article-more-info .author {
+  display: flex;
+  flex-direction: column;
+}
+.article-more-info .author-name {
+  color: var(--colorAzul1);
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.article-more-info .author-hour-post {
+  color: var(--colorAzul1);
+  opacity: 0.4;
+  font-size: 14px;
+}
+.article-more-info .article-icons {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.article-more-info .article-icons .fas.fa-share-alt, .article-more-info .article-icons .fas.fa-bookmark {
+  color: var(--colorAzul3);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=articlemore.css.map */

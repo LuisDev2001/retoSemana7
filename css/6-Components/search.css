@@ -1,0 +1,72 @@
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
+}
+
+.search {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (min-width: 1200px) {
+  .search {
+    height: 8rem;
+  }
+}
+.search-form {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-icon {
+  width: 40px;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--colorBlancogris);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.search-icon .fas.fa-search {
+  color: var(--colorAzul2);
+  font-size: 1rem;
+}
+.search-input {
+  width: calc(100% - 40px);
+  height: 56px;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  background: var(--colorBlancogris);
+  color: var(--colorAzul2);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1rem;
+}
+.search-input-input::placeholder {
+  color: var(--colorAzul2);
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=search.css.map */
