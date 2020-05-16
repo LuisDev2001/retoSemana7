@@ -80,6 +80,11 @@
     font-size: 1.3rem;
   }
 }
+@media (min-width: 1200px) {
+  .header .contenedor {
+    padding: 0;
+  }
+}
 
 /*Variables*/
 /*Importando fuente*/
