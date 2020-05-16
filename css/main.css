@@ -31,6 +31,10 @@
   padding: 0;
 }
 
+body {
+  position: relative;
+}
+
 li {
   list-style: none;
 }
@@ -862,6 +866,42 @@ a {
 .footer-blog-copy-text {
   color: var(--colorBlanco);
   opacity: 0.4;
+}
+
+/*returnTop*/
+.returnTop {
+  position: fixed;
+  bottom: 0;
+  right: 2rem;
+  border-radius: 50%;
+  background: var(--colorCelesteOscuro);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.returnTop:hover {
+  background: var(--colorCelesteClaro);
+}
+.returnTop:hover i {
+  color: var(--colorCelesteOscuro);
+}
+.returnTop i {
+  color: var(--colorBlanco);
+  font-size: 1.5rem;
+}
+
+@font-face {
+  src: url("../../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
 }
 
 /*# sourceMappingURL=main.css.map */

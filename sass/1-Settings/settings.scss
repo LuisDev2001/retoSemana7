@@ -1,14 +1,7 @@
 /*Variables*/
 /*Importando fuente*/
-@font-face {
-  src: url("../../fonts/Helvetica.ttf");
-  font-family: "Helvetica";
-}
+@import "../7-Utilities/utilities.scss";
 
-@font-face {
-  src: url("../../fonts/Gilroy-Bold.ttf");
-  font-family: "Gilroy-Bold";
-}
 $fontHelvetica: "Helvetica";
 $fontGilroyBold: "Gilroy-Bold";
 
