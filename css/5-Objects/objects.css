@@ -317,7 +317,173 @@
   font-weight: bold;
 }
 
-/*@import "./sections/allArticles/all-articles.scss";
-@import "./sections/footer/footer.scss";*/
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
+}
+
+.all-article {
+  width: 100%;
+  height: auto;
+}
+.all-article-title {
+  margin: 2.5em 0 2em 0;
+  color: var(--colorAzul3);
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.all-article-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 32px;
+}
+.all-article-container .items {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+}
+.all-article-container .items .article-title {
+  color: var(--colorAzul1);
+  font-size: 1.1rem;
+  margin: 13px 0;
+}
+.all-article-container .items .image-article {
+  display: flex;
+  width: 100%;
+}
+.all-article-container .items .image-article img {
+  display: flex;
+  width: 100%;
+}
+.all-article-container .items:nth-child(3), .all-article-container .items:nth-child(4), .all-article-container .items:nth-child(5) {
+  display: none;
+}
+@media (min-width: 768px) {
+  .all-article-container .items {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
+}
+
+.footer-blog {
+  width: auto;
+  height: auto;
+  background: var(--colorAzul2);
+  margin-right: 1rem;
+  border-top-right-radius: 200px;
+}
+.footer-blog-description {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--colorBlanco);
+}
+.footer-blog-description .contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-blog-description-footer {
+  width: 90%;
+}
+.footer-blog-description-title {
+  color: var(--colorBlanco);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+.footer-blog-description-paragraph {
+  color: var(--colorBlanco);
+  font-size: 1rem;
+}
+.footer-blog-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0 40px;
+  padding-top: 5rem;
+  position: relative;
+}
+.footer-blog-items-contact {
+  width: 100%;
+  height: auto;
+}
+.footer-blog-items-header {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.footer-blog-items-header .logo {
+  display: inline-flex;
+  margin-right: 1.5em;
+}
+.footer-blog-items-header .logo .circle.uno {
+  background: var(--colorCelesteClaro);
+}
+.footer-blog-items-title-compay, .footer-blog-items-about-us, .footer-blog-items-follow-us {
+  color: var(--colorBlanco);
+}
+.footer-blog-items-title-compay {
+  font-size: 1.8rem;
+  font-family: "Gilroy-Bold";
+}
+.footer-blog-items-about-us, .footer-blog-items-follow-us {
+  font-size: 1.3rem;
+}
+.footer-blog-items-contact-info {
+  height: auto;
+}
+.footer-blog-items-contact-info a {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--colorBlanco);
+}
+@media (min-width: 768px) {
+  .footer-blog {
+    margin-right: 1.5rem;
+  }
+}
 
 /*# sourceMappingURL=objects.css.map */

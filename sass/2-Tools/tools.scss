@@ -16,3 +16,9 @@ $desktop: 1200px;
     @content;
   }
 }
+
+//Size button
+@mixin buttonSize($width, $height) {
+  width: $width;
+  height: $height;
+}

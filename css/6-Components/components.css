@@ -143,4 +143,95 @@
   cursor: pointer;
 }
 
+/*Paginador de articulos*/
+.all-article-pages {
+  width: 100%;
+  height: 100px;
+  display: none;
+}
+.all-article-pages .btn-page {
+  border: 0;
+  background: none;
+  color: var(--colorAzul3);
+  cursor: pointer;
+  font-size: 1rem;
+}
+.all-article-pages .btn-page .fas.fa-arrow-left {
+  margin-right: 0.9rem;
+}
+.all-article-pages .btn-page .fas.fa-arrow-right {
+  margin-left: 0.9rem;
+}
+@media (min-width: 768px) {
+  .all-article-pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/*new post mobile button*/
+.new-post-mobile {
+  width: 100%;
+  text-align: right;
+  padding: 0.5rem 2rem 0 0;
+}
+.new-post-mobile-link {
+  color: var(--colorAzul3);
+  font-size: 1rem;
+  font-family: Arial;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .new-post-mobile {
+    display: none;
+  }
+}
+
+/*Colocar estilos de boton a reutilizar*/
+.btn {
+  width: 220px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s ease all;
+}
+
+.btn.primary {
+  background: var(--colorCelesteOscuro);
+  color: var(--colorBlanco);
+}
+
+.btn.primary:hover {
+  background: var(--colorCelesteClaro);
+  color: var(--colorNegro);
+}
+
+/*contact more repeat*/
+.contact {
+  margin-bottom: 1.5rem;
+  color: var(--colorBlanco);
+  display: inline-flex;
+}
+.contact span {
+  margin-right: 20px;
+}
+
+/*Copy right component*/
+.footer-blog-copy {
+  width: 100%;
+  height: 60px;
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-blog-copy-text {
+  color: var(--colorBlanco);
+  opacity: 0.4;
+}
+
 /*# sourceMappingURL=components.css.map */
