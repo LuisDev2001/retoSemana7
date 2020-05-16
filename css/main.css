@@ -73,11 +73,11 @@ a {
 /*Variables*/
 /*Importando fuente*/
 @font-face {
-  src: url("../../fonts/Helvetica.ttf");
+  src: url("../fonts/Helvetica.ttf");
   font-family: "Helvetica";
 }
 @font-face {
-  src: url("../../fonts/Gilroy-Bold.ttf");
+  src: url("../fonts/Gilroy-Bold.ttf");
   font-family: "Gilroy-Bold";
 }
 :root {
@@ -156,11 +156,11 @@ a {
 /*Variables*/
 /*Importando fuente*/
 @font-face {
-  src: url("../../fonts/Helvetica.ttf");
+  src: url("../fonts/Helvetica.ttf");
   font-family: "Helvetica";
 }
 @font-face {
-  src: url("../../fonts/Gilroy-Bold.ttf");
+  src: url("../fonts/Gilroy-Bold.ttf");
   font-family: "Gilroy-Bold";
 }
 :root {
@@ -196,7 +196,7 @@ a {
   left: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("../../../../img/bannerVector.png");
+  background-image: url("../img/bannerVector.png");
   background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,11 +237,11 @@ a {
 /*Variables*/
 /*Importando fuente*/
 @font-face {
-  src: url("../../fonts/Helvetica.ttf");
+  src: url("../fonts/Helvetica.ttf");
   font-family: "Helvetica";
 }
 @font-face {
-  src: url("../../fonts/Gilroy-Bold.ttf");
+  src: url("../fonts/Gilroy-Bold.ttf");
   font-family: "Gilroy-Bold";
 }
 :root {
@@ -398,11 +398,11 @@ a {
 /*Variables*/
 /*Importando fuente*/
 @font-face {
-  src: url("../../fonts/Helvetica.ttf");
+  src: url("../fonts/Helvetica.ttf");
   font-family: "Helvetica";
 }
 @font-face {
-  src: url("../../fonts/Gilroy-Bold.ttf");
+  src: url("../fonts/Gilroy-Bold.ttf");
   font-family: "Gilroy-Bold";
 }
 :root {
@@ -454,14 +454,18 @@ a {
   display: flex;
   width: 100%;
 }
-.all-article-container .items:nth-child(3), .all-article-container .items:nth-child(4), .all-article-container .items:nth-child(5) {
+.all-article-container .items:nth-child(3),
+.all-article-container .items:nth-child(4),
+.all-article-container .items:nth-child(5) {
   display: none;
 }
 @media (min-width: 768px) {
   .all-article-container .items {
     grid-template-columns: auto 1fr;
   }
-  .all-article-container .items:nth-child(3), .all-article-container .items:nth-child(4), .all-article-container .items:nth-child(5) {
+  .all-article-container .items:nth-child(3),
+  .all-article-container .items:nth-child(4),
+  .all-article-container .items:nth-child(5) {
     display: grid;
   }
 }
@@ -469,11 +473,11 @@ a {
 /*Variables*/
 /*Importando fuente*/
 @font-face {
-  src: url("../../fonts/Helvetica.ttf");
+  src: url("../fonts/Helvetica.ttf");
   font-family: "Helvetica";
 }
 @font-face {
-  src: url("../../fonts/Gilroy-Bold.ttf");
+  src: url("../fonts/Gilroy-Bold.ttf");
   font-family: "Gilroy-Bold";
 }
 :root {
@@ -581,14 +585,17 @@ a {
 .footer-blog-items-header .logo .circle.uno {
   background: var(--colorCelesteClaro);
 }
-.footer-blog-items-title-compay, .footer-blog-items-about-us, .footer-blog-items-follow-us {
+.footer-blog-items-title-compay,
+.footer-blog-items-about-us,
+.footer-blog-items-follow-us {
   color: var(--colorBlanco);
 }
 .footer-blog-items-title-compay {
   font-size: 1.8rem;
   font-family: "Gilroy-Bold";
 }
-.footer-blog-items-about-us, .footer-blog-items-follow-us {
+.footer-blog-items-about-us,
+.footer-blog-items-follow-us {
   font-size: 1.3rem;
 }
 .footer-blog-items-contact-info {
@@ -611,11 +618,11 @@ a {
 /*Variables*/
 /*Importando fuente*/
 @font-face {
-  src: url("../../fonts/Helvetica.ttf");
+  src: url("../fonts/Helvetica.ttf");
   font-family: "Helvetica";
 }
 @font-face {
-  src: url("../../fonts/Gilroy-Bold.ttf");
+  src: url("../fonts/Gilroy-Bold.ttf");
   font-family: "Gilroy-Bold";
 }
 :root {
@@ -752,7 +759,8 @@ a {
   align-items: center;
   justify-content: space-around;
 }
-.article-more-info .article-icons .fas.fa-share-alt, .article-more-info .article-icons .fas.fa-bookmark {
+.article-more-info .article-icons .fas.fa-share-alt,
+.article-more-info .article-icons .fas.fa-bookmark {
   color: var(--colorAzul3);
   font-size: 14px;
   cursor: pointer;
@@ -896,11 +904,11 @@ a {
 }
 
 @font-face {
-  src: url("../../fonts/Helvetica.ttf");
+  src: url("../fonts/Helvetica.ttf");
   font-family: "Helvetica";
 }
 @font-face {
-  src: url("../../fonts/Gilroy-Bold.ttf");
+  src: url("../fonts/Gilroy-Bold.ttf");
   font-family: "Gilroy-Bold";
 }
 
