@@ -116,7 +116,7 @@ a {
   align-items: inherit;
 }
 .header-list {
-  width: 6rem;
+  width: 5.5rem;
   height: 100%;
   display: inherit;
   align-items: inherit;
@@ -149,8 +149,88 @@ a {
   }
 }
 
-/*@import "./sections/banner/banner.scss";
-@import "./sections/mainArticles/articles.scss";
+/*Variables*/
+/*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+:root {
+  --colorBlancogris: #f4f4f4;
+  --colorBlanco: #ffffff;
+  --colorAzul1: #1f3f68;
+  --colorAzul2: #316099;
+  --colorAzul3: #356ead;
+  --colorCelesteOscuro: #5a98d0;
+  --colorCelesteClaro: #98c3e8;
+  --colorAzul1Hover: #006eff;
+  --colorNegroRgba: rgba(0, 0, 0, 0.2);
+  --colorNegro: #222222;
+  --colorGradient: linear-gradient(211.87deg, #98d0fc 2.46%, #3481d7 93.24%);
+}
+
+.banner {
+  width: 100%;
+  height: 250px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--colorGradient);
+  position: relative;
+  z-index: 0;
+}
+.banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../../../../img/bannerVector.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-title {
+  text-align: center;
+  color: var(--colorBlanco);
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  font-weight: lighter;
+}
+.banner-description {
+  width: 75%;
+  text-align: center;
+  color: var(--colorBlanco);
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+@media (min-width: 768px) {
+  .banner-description {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .banner-title {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .banner-description {
+    width: 30rem;
+    font-size: 1rem;
+  }
+  .banner-title {
+    font-size: 2.5rem;
+  }
+}
+
+/*@import "./sections/mainArticles/articles.scss";
 @import "./sections/allArticles/all-articles.scss";
 @import "./sections/footer/footer.scss";*/
 /*Variables*/

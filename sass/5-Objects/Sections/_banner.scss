@@ -1,0 +1,62 @@
+@import "../../1-Settings/settings.scss";
+@import "../../2-Tools/tools.scss";
+.banner {
+  width: 100%;
+  height: 250px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--colorGradient);
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url("../../../../img/bannerVector.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-title {
+    text-align: center;
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    font-weight: lighter;
+  }
+
+  &-description {
+    width: 75%;
+    text-align: center;
+    color: var(--colorBlanco);
+    font-size: 0.9rem;
+    font-weight: lighter;
+  }
+
+  @include tabletV {
+    &-description {
+      width: 50%;
+      font-size: 1rem;
+    }
+    &-title {
+      font-size: 2.3rem;
+    }
+  }
+  @include desktop {
+    &-description {
+      width: 30rem;
+      font-size: 1rem;
+    }
+    &-title {
+      font-size: 2.5rem;
+    }
+  }
+}
