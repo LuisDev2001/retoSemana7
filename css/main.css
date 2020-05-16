@@ -940,8 +940,17 @@ a {
   align-items: center;
   justify-content: center;
   transition: 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: scale(0.9);
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.returnTop.is-active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
 }
 .returnTop:hover {
   background: var(--colorCelesteClaro);
