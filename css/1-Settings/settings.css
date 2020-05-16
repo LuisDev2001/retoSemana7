@@ -1,5 +1,9 @@
 /*Variables*/
 /*Importando fuente*/
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
 :root {
   --colorBlancogris: #f4f4f4;
   --colorBlanco: #ffffff;
