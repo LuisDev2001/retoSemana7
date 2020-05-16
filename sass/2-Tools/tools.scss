@@ -1,19 +1,18 @@
 //Mixins
-// Small tablets (portrait view)
+//tablets
 $tabletV: 768px;
-// Large tablets and desktops
+//desktops
 $desktop: 1200px;
 
-//Mobile
-@mixin sm {
-  @media (min-width: #{$tabletV}) {
+//Desktop
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
     @content;
   }
 }
-
-//Desktop
-@mixin md {
-  @media (min-width: #{$desktop}) {
+//Tablet
+@mixin tabletV {
+  @media (min-width: #{$tabletV}) {
     @content;
   }
 }

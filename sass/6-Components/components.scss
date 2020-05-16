@@ -1,0 +1,37 @@
+@import "../1-Settings/settings.scss";
+@import "../2-Tools/tools.scss";
+// Contenedor reutilizable
+.contenedor {
+  height: auto;
+  margin: 0 auto;
+}
+//Logo componenet
+.logo {
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .circle.uno {
+    background: var(--colorAzul2);
+    border: 2px solid var(--colorAzul2);
+  }
+
+  .circle.dos {
+    background: var(--colorBlanco);
+    border: 2px solid var(--colorAzul2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $fontGilroyBold;
+    position: absolute;
+    left: 15px;
+  }
+}
