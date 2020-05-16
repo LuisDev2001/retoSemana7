@@ -120,7 +120,7 @@
   left: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("../../../../img/bannerVector.png");
+  background-image: url("../img/bannerVector.png");
   background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
