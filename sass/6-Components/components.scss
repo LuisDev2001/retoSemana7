@@ -48,6 +48,10 @@
   align-items: center;
   justify-content: flex-start;
 
+  @include desktop {
+    height: 8rem;
+  }
+
   &-form {
     width: 100%;
     height: 56px;
@@ -160,6 +164,10 @@
 /*new post mobile button*/
 .new-post-mobile {
   width: 100%;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  justify-content: flex-end;
   text-align: right;
   padding: 0.5rem 2rem 0 0;
 
@@ -175,23 +183,38 @@
   }
 }
 /*Colocar estilos de boton a reutilizar*/
-.btn {
-  @include buttonSize(220px, 56px);
+.container-btn {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  font-size: 1rem;
-  transition: 0.3s ease all;
+  margin-top: 1rem;
+  .btn {
+    @include buttonSize(100%, 56px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 0.3s ease all;
+
+    &.primary {
+      background: var(--colorCelesteOscuro);
+      color: var(--colorBlanco);
+    }
+    &.primary:hover {
+      background: var(--colorCelesteClaro);
+      color: var(--colorNegro);
+    }
+  }
+  @include tabletV {
+    width: 30%;
+  }
+  @include desktop {
+    width: 40%;
+  }
 }
-.btn.primary {
-  background: var(--colorCelesteOscuro);
-  color: var(--colorBlanco);
-}
-.btn.primary:hover {
-  background: var(--colorCelesteClaro);
-  color: var(--colorNegro);
-}
+
 /*contact more repeat*/
 .contact {
   margin-bottom: 1.5rem;

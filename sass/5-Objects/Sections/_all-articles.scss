@@ -43,11 +43,14 @@
     &:nth-child(5) {
       display: none;
     }
-  }
-
-  @include tabletV {
-    .items {
+    @include tabletV {
       grid-template-columns: auto 1fr;
+
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        display: grid;
+      }
     }
   }
 }

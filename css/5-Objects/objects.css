@@ -73,6 +73,12 @@
   .header .contenedor {
     padding: 0 1.5rem;
   }
+  .header-list {
+    width: 8rem;
+  }
+  .header-link {
+    font-size: 1.3rem;
+  }
 }
 
 /*Variables*/
@@ -149,10 +155,10 @@
 @media (min-width: 1200px) {
   .banner-description {
     width: 30rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .banner-title {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -383,6 +389,9 @@
   .all-article-container .items {
     grid-template-columns: auto 1fr;
   }
+  .all-article-container .items:nth-child(3), .all-article-container .items:nth-child(4), .all-article-container .items:nth-child(5) {
+    display: grid;
+  }
 }
 
 /*Variables*/
@@ -416,6 +425,16 @@
   margin-right: 1rem;
   border-top-right-radius: 200px;
 }
+@media (min-width: 768px) {
+  .footer-blog .contenedor {
+    padding: 0 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-blog .contenedor {
+    padding: 0;
+  }
+}
 .footer-blog-description {
   padding: 5rem 0;
   border-bottom: 1px solid var(--colorBlanco);
@@ -426,8 +445,24 @@
   flex-direction: column;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .footer-blog-description .contenedor {
+    flex-direction: row;
+    padding: 0 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-blog-description .contenedor {
+    padding: 0;
+  }
+}
 .footer-blog-description-footer {
-  width: 90%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .footer-blog-description-footer {
+    width: 20rem;
+  }
 }
 .footer-blog-description-title {
   color: var(--colorBlanco);
@@ -438,6 +473,7 @@
 .footer-blog-description-paragraph {
   color: var(--colorBlanco);
   font-size: 1rem;
+  line-height: 26px;
 }
 .footer-blog-items {
   display: grid;
@@ -446,6 +482,17 @@
   grid-gap: 0 40px;
   padding-top: 5rem;
   position: relative;
+}
+@media (min-width: 768px) {
+  .footer-blog-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-blog-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .footer-blog-items-contact {
   width: 100%;
@@ -474,6 +521,9 @@
 }
 .footer-blog-items-contact-info {
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .footer-blog-items-contact-info a {
   display: block;
